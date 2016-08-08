@@ -3,5 +3,5 @@
  */
 var metadataController = angular.module("metadataController",[])
     .controller('metadataController', ['$scope', '$http', 'API_URL', function ($scope, $http, API_URL) {
-        console.log("Metadata controller page");
+        //console.log("Metadata controller page");
     }]);
