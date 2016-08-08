@@ -1,0 +1,68 @@
+<h1>Metadata</h1>
+
+<form method="post">
+<div class="gr">
+  <div class="qo qw">
+      <div class="qq">
+        <h3 class="qr">Add New Metadata</h3>
+      </div>
+      <div class="qp">
+         <div class="el">
+             <label for="categoryName">Name of Metadata</label>
+              <input type="name" class="form-control" name="name" id="metadata-name"  placeholder="Enter name of metadata" />
+        </div>
+         <button ng-click="saveMetadata" class="ce fn fh">Save</button>
+      </div>
+    </div>
+    </div>
+    <div class="gr">
+     <div class="qo qw">
+      <div class="qq">
+        <h3 class="qr">Add New Metadata Category</h3>
+      </div>
+      <div class="qp">
+         <div class="el">
+             <label for="categoryName">Metadata ID</label>
+              <input type="name" class="form-control" name="metadataId" id="metadata-id"  placeholder="Enter name of metadata" />
+              <label for="categoryName">Category ID</label>
+              <input type="name" class="form-control" name="categoryId" id="category-id"  placeholder="Enter name of metadata" />
+        </div>
+         <button ng-click="saveMetadata" class="ce fn fh">Save</button>
+      </div>
+    </div>
+    </div>
+</form>
+
+<div class="fu">
+  <div class="gr">
+    <table class="cl" >
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Metadata Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="data in metadata">
+          <td>{{data.name}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+   <div class="gr">
+    <table class="cl" >
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Metadata-Category Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="dataCategory in metadata-category">
+          <td>{{dataCategory.name}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
